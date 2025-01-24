@@ -1,0 +1,48 @@
+# ⚡ Node.js / Vite
+node_modules/
+dist/
+public/build/
+.vite/
+
+# 🐘 PHP / Composer
+vendor/
+composer.lock
+
+# ⚙️ Configuración del entorno
+.env
+.env.local
+.env.*.local
+
+# 🏗️ Archivos generados por el compilador
+cache/
+storage/
+*.log
+
+# 🖼️ Imágenes y archivos de salida
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+
+# 📝 Archivos del sistema operativo y editores
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.bak
+*.swp
+*.swo
+
+# ⚙️ Configuración de TailwindCSS
+tailwind.config.js
+.postcssrc.js
+
+# 📦 Archivos de compilación
+build.php
+vite.config.js
+
+# 🚀 Archivos generados por Vite y compilaciones de frontend
+public/assets/
+public/js/
+public/css/
