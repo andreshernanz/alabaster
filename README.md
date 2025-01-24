@@ -1,3 +1,4 @@
+
 ## 🏗 **Alabaster – Generador de Sitios Estáticos con PHP, Blade y Vite**
 
 Alabaster es un generador de sitios estáticos minimalista que combina **Markdown**, **Blade**, **TailwindCSS o Bootstrap** y **Vite.js** para una experiencia de desarrollo moderna y eficiente.
@@ -16,30 +17,59 @@ Alabaster es un generador de sitios estáticos minimalista que combina **Markdow
 ## 📂 **Estructura del Proyecto**
 ```plaintext
 alabaster/
-├── src/                     # Carpeta fuente
-│   ├── pages/               # Archivos Markdown (.md) para el contenido
-│   ├── templates/           # Plantillas Blade (.blade.php)
-│   ├── assets/              # Recursos estáticos (CSS, JS, imágenes)
+src/
+├── templates/
+│   ├── layouts/
+│   │   ├──  # Plantilla principal
+│   ├── partials/
+│   │   ├── head.blade.php  # Meta y estilos
+│   │   ├── header.blade.php  # Encabezado con navegación
+│   │   ├── footer.blade.php  # Pie de página
+│   ├── components/
+│   │   ├── alert.blade.php  # Ejemplo de un componente reutilizable
+│   ├── pages/
+│   │   ├── home.md  # Página de inicio
+│   ├── assets/         # CSS, JS, imágenes
 │   │   ├── css/
-│   │   │   ├── styles.css   # Archivo de estilos principal
-│   │   │   ├── tailwind.css # (opcional) Configuración de Tailwind
+│   │   │   ├── styles.css
+│   │   │   ├── tailwind.css (opcional)
 │   │   ├── js/
-│   │   │   ├── app.js       # Código JavaScript principal
-│   │   │   ├── bootstrap.js # (opcional) Bootstrap JS
-│   ├── index.html           # Archivo de entrada de Vite
-├── public/                  # Salida generada (listo para deploy)
-├── build.php                # Script de compilación PHP
-├── package.json             # Configuración de dependencias frontend
-├── tailwind.config.js        # Configuración de Tailwind (opcional)
-├── vite.config.js            # Configuración de Vite
-└── README.md                 # Documentación
+│   │   │   ├── app.js
+│   │   │   ├── bootstrap.js (opcional)
+│   ├── config.php      # Configuración del sitio
+├── public/             # Carpeta accesible por el servidor
+│   ├── index.php       # Entrada del servidor PHP
+│   ├── assets/         # Archivos compilados
+├── build.php           # Script para generar HTML estático
+├── init.php            # Configuración inicial del sitio
+├── server.php          # Router PHP para desarrollo
+├── vite.config.js      # Configuración de Vite
+├── README.md           # Documentación
+├── package.json        # Dependencias de Node.js
 ```  
 
 ---  
 
 ## 🚀 **Guía Rápida de Uso**
 
-### 1️⃣ **Instalar dependencias**
+### 1️⃣ **Clonar el Proyecto**
+Primero, clona el proyecto desde GitHub:
+
+```bash
+git clone https://github.com/tu-usuario/alabaster.git
+cd alabaster
+```
+
+### 2️⃣ **Configurar el Proyecto**
+Antes de comenzar, necesitas realizar la configuración inicial del sitio. Esto incluye el nombre del sitio y la elección del framework CSS que quieres usar (TailwindCSS o Bootstrap). Para ello, ejecuta el siguiente comando:
+
+```bash
+php alabaster init
+```
+
+Este comando te guiará a través del proceso de configuración.
+
+### 3️⃣ **Instalar dependencias**
 Ejecuta estos comandos en la raíz del proyecto para instalar las dependencias necesarias:
 
 ```bash
@@ -47,21 +77,21 @@ npm install
 composer install
 ```  
 
-### 2️⃣ **Iniciar el servidor de desarrollo**
+### 4️⃣ **Iniciar el servidor de desarrollo**
 Para ver cambios en tiempo real mientras editas el sitio, ejecuta:
 
 ```bash
 npx vite           # o npm run dev
 ```  
 
-### 3️⃣ **Compilar para producción**
+### 5️⃣ **Compilar para producción**
 Cuando el sitio esté listo, genera los archivos optimizados:
 
 ```bash
 npx vite build
 ```  
 
-### 4️⃣ **Generar el sitio estático**
+### 6️⃣ **Generar el sitio estático**
 Finalmente, renderiza el contenido y genera la versión final en `public/`:
 
 ```bash
@@ -123,3 +153,5 @@ Si tienes sugerencias, mejoras o encuentras algún error, ¡no dudes en contribu
 ---
 
 🔹 **¡Gracias por usar Alabaster!** 🚀✨
+
+---
