@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title ?? 'Alabaster' }}</title>
+   <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+{% include '_partials/header.twig' %}
+<main>
+    {% block content %}{% endblock %}
+</main>
+{% include '_partials/footer.twig' %}
+<script src="/js/main.js"></script>
+</body>
+</html>

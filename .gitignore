@@ -1,48 +1,17 @@
-# ⚡ Node.js / Vite
-node_modules/
-dist/
-public/build/
-.vite/
+# Ignora archivos del sistema Mac
+.DS_store
 
-# 🐘 PHP / Composer
-vendor/
-composer.lock
+# Ignora la carpeta node_modules
+node_modules
 
-# ⚙️ Configuración del entorno
+# Ignora todos los archivos de texto
+*.txt
+
+# Ignora los archivos relacionados a API keys
 .env
-.env.local
-.env.*.local
 
-# 🏗️ Archivos generados por el compilador
-cache/
-storage/
-*.log
+#Ignora la carpeta vendor
+vendor
 
-# 🖼️ Imágenes y archivos de salida
-*.png
-*.jpg
-*.jpeg
-*.gif
-*.svg
-
-# 📝 Archivos del sistema operativo y editores
-.DS_Store
-Thumbs.db
-.idea/
-.vscode/
-*.bak
-*.swp
-*.swo
-
-# ⚙️ Configuración de TailwindCSS
-tailwind.config.js
-.postcssrc.js
-
-# 📦 Archivos de compilación
-build.php
-vite.config.js
-
-# 🚀 Archivos generados por Vite y compilaciones de frontend
-public/assets/
-public/js/
-public/css/
+# Ignora
+.idea
