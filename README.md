@@ -17,7 +17,7 @@ Alabaster es un generador de sitios estáticos minimalista que combina Markdown,
 ## Requisitos
 
 - PHP 8.0 o superior
-- Node.js 16.0 o superior
+- Node.js 18.0 o superior
 
 ---
 
@@ -110,11 +110,9 @@ Este proyecto está bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE)
 
 - **Autor**: [Andrés Hernández](https://github.com/andreshernanz
 - **Inspiración**: [Enlace a inspiración, si la hay]
-```
 
 ---
-
-## 3. **Pendientes**
+## Pendientes
 
 ### a) Integración de Vite.js
 Asegúrate de que Vite.js esté correctamente configurado para compilar tanto Tailwind CSS como Bootstrap. Ya tienes una base sólida en tu `vite.config.js`, pero recuerda:
@@ -123,5 +121,17 @@ Asegúrate de que Vite.js esté correctamente configurado para compilar tanto Ta
 - Si el usuario elige Bootstrap, asegúrate de que los archivos de Bootstrap se importen correctamente en `src/assets/js/main.js` y `src/assets/css/main.css`.
 
 ### b) Documentación adicional
-Considera agregar una sección en el `README.md` para explicar cómo cambiar entre Tailwind CSS y Bootstrap, o cómo personalizar la configuración de Vite.
+- Considerar agregar una sección en el `README.md` para explicar cómo cambiar entre Tailwind CSS y Bootstrap, o cómo personalizar la configuración de Vite.
+--- 
 
+## **Preguntas frecuentes**
+
+### ¿Cómo puedo cambiar entre Tailwind CSS y Bootstrap?
+
+### ¿Cómo puedo personalizar la configuración de Vite?
+
+### ¿Cómo puedo agregar una nueva página? ¿Cómo puedo agregar un nuevo post?
+
+### ¿Cómo puedo agregar un nuevo componente?
+
+### ¿Cómo puedo agregar un nuevo plugin de PHP? 
